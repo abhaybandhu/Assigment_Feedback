@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+    <div class="feedback-container">
+        <h1 class="header">Feedback</h1>
+        <div class="input-fields-container">
+
+            <div class="flex">
+                <div class="text-container">
+                    <div class="label_class"><label for="name">Enter Your Name:</label></div>
+                    <input type="text" class="input-field field" name="name" id="name" placeholder="e.g John smith">
+                </div>
+
+                <div class="text-container">
+                    <div class="label_class"><label for="email">Enter Your Email:</label></div>
+                    <input type="email" class="input-field field" name="email" id="email"
+                        placeholder="e.g john.smith@mail.com">
+                </div>
+            </div>
+
+
+            <div class="department-container">
+                <div class="label_class"><label for="department">Department:</label></div>
+                <select name="department" class="input-field field" id="department">
+                    <option value="product-&-technology">Product & technology</option>
+                    <option value="customer-support">Customer support</option>
+                    <option value="human-resource">Human resource</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="rating-container">
+                <div class="label_class"><label for="rating">Rating:</label></div>
+                <div class="rating-field" id="rating">
+                    <input class="radio-button-rating" type="radio" name="rating" id="rating-5">
+                    <label for="rating-5"><img id="img-rating-5"
+                            src="https://img.icons8.com/emoji/48/000000/angry-face-emoji--v2.png" /></label>
+                    <input class="radio-button-rating" type="radio" name="rating" id="rating-4">
+                    <label for="rating-4"><img id="img-rating-4"
+                            src="https://img.icons8.com/fluent/48/000000/sad.png" /></label>
+                    <input class="radio-button-rating" type="radio" name="rating" id="rating-3">
+                    <label for="rating-3"><img id="img-rating-3"
+                            src="https://img.icons8.com/color/48/000000/happy.png" /></label>
+                    <input class="radio-button-rating" type="radio" name="rating" id="rating-2">
+                    <label for="rating-2"><img id="img-rating-2"
+                            src="https://img.icons8.com/emoji/48/000000/smiling-face.png" /></label>
+                    <input class="radio-button-rating" type="radio" name="rating" id="rating-1">
+                    <label for="rating-1"><img id="img-rating-1"
+                            src="https://img.icons8.com/color/48/000000/lol.png" /></label>
+                </div>
+            </div>
+
+
+            <div class="label_class"><label for="improvement">Suggest improvement:</label></div>
+            <div name="improvement" class="field" id="improvement">
+
+
+                <label class="options" for="option1">More Labs/Assignment
+                    <input type="checkbox" id="option1" name="improvement" value="more-lab">
+                    <span class="checkmark"></span>
+                </label>
+                
+                
+                
+                <label class="options" for="option2">More self learninng session<input type="checkbox" id="option2" name="improvement"
+                        value="more-self"><span class="checkmark"></span></label>
+                
+                
+                
+                <label class="options" for="option3">More Food(especially pizza)<input type="checkbox" id="option3" name="improvement"
+                        value="more-food"><span class="checkmark"></span></label>
+                
+                
+                
+                <label class="options" for="option4">More complex training session<input type="checkbox" id="option4" name="improvement"
+                        value="more-training"><span class="checkmark"></span></label>
+                
+                
+                
+                <label class="options" for="option5">Less complex training session<input type="checkbox" id="option5" name="improvement"
+                        value="less-training"><span class="checkmark"></span></label>
+
+
+            </div>
+
+
+            <div class="other-comments-textfield">
+                <div class="label_class"><label for="other-comments">Other Comments:</label></div>
+                <textarea id="other-comments" class="fields" name="other-comments"></textarea>
+            </div>
+
+        </div>
+        <div class="buttons-container">
+            <input type="submit" class="button" id="submit-button" value="Submit Form">
+            <input type="reset" class="button" id="reset-button" value="Reset">
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

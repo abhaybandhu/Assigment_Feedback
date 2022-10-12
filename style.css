@@ -1,0 +1,236 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'segoe ui';
+    /* font-size: 22px; */
+}
+
+body{
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+    
+}
+
+.bg-image{
+    
+    height: 100%;
+    filter: blur(1.5rem);
+    /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+
+}
+
+
+.feedback-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2% 5% 2% 5%;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: 2rem;
+
+    /* height: 100%; */
+}
+
+.header{
+    text-align: center;
+}
+
+.label_class{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.radio-button-rating{
+    display: none;
+}
+
+img{
+    cursor: pointer;
+    opacity: .5;
+}
+img:hover{
+    opacity: 1;
+}
+.visible{
+    opacity: 1 !important;
+}
+
+.input-field{
+    position: relative;
+    width: 90%;
+    /* margin-right: 20px; */
+    color: white;
+    border: 1px solid white;
+    /* background: transparent; */
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#department{
+    height: 40px !important;
+    
+}
+.options{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.options input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+  }
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+  /* On mouse-over, add a grey background color */
+.options:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .options input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .options input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .options .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+.field{
+    margin-left: 10px;
+}
+.rating-field{
+    text-align: center;
+}
+#other-comments{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.button{
+    padding: 10px;
+    cursor: pointer;
+    border:0 ;
+    border-radius: 10px;
+    /* height: 30px; */
+}
+#reset-button{
+    background-color: #f8f9fa;
+}
+.buttons-container{
+    margin-top: 10px ;
+}
+#submit-button{
+    color: white;
+    background-color: #28a745;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.text-container{
+    position :relative;
+    margin: auto;
+    width: 50%;
+}
+@media all and (max-width: 1364px) {
+    .body{
+        overflow-y: scroll;
+        height: 100%;
+        display: flex; 
+        justify-content: center;
+    }
+   .flex{
+        display: block;
+        justify-content: none;
+   }
+   .text-container{
+    margin: 0;
+        width: 100%;
+   } 
+   
+   .feedback-container{
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+   }
+   #other-comments{
+    width: 90%;
+   }
+}
+@media all and (max-width: 800px) {
+    .feedback-container{
+        width: 80%;
+        
+    }
+}
+
+@media all and (max-height: 820px) {
+
+    .feedback-container{
+        margin-top: 2rem;
+        height: 100%;
+        overflow: scroll;
+    }
+    .buttons-container{
+        margin-bottom: 2rem;
+    }
+ }
+
+
+ 
